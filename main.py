@@ -1,5 +1,3 @@
-name = input("Enter Your Full Name: ").strip().title()
+abc = "Hello World!"
 
-first, last = name.split(" ")
-
-print(f"Hello {first}")
+print()

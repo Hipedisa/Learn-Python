@@ -44,6 +44,5 @@ while list:
         printList()
     else:
         print("All tasks completed!")
-
-input("Press any key to continue...")
     
+input("Press enter to continue...")

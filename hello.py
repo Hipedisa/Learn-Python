@@ -1,8 +1,8 @@
 def main():
-    first, last = input("Enter Your Full Name: ").strip().title().split(" ")
+    first, last = input("enter your full name nigga: ").strip().title().split(" ")
     hello(first)
 
-def hello(to="Anonymous"):
-    print(f"Hello {to}")
+def hello(to):
+    print(f"hello, {to}!")
 
 main()

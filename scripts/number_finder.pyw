@@ -8,9 +8,6 @@ result = phoneNumRegex.findall(message) # Uses the tool to search
 
 
 if result:
-    for num in result:
-        print(num)
-        pyperclip.copy()
-else:
-    print("No phone number found")
+    listed_numbers = '\n'.join(result)  # Join numbers with newlines
+    pyperclip.copy(listed_numbers)      # Copy to clipboard
 

@@ -1,4 +1,16 @@
-weapon = "M4A1"
-bullets = 8
-recoil = 12
-print("You are currently using a %s which has %i bullets and %i recoil" % (weapon, bullets, recoil))
+import pyperclip
+import re
+
+emailRegex = re.compile('''
+
+[a-zA-Z0-9_.+-~$%#^/.&='+]   # name part
+@   # @ symbol
+[a-zA-Z0-9_.+-~$%#^/.&=']+   # domain part      
+                                          
+''', re.VERBOSE)
+
+text = pyperclip.paste()
+
+results = emailRegex.findall(text)
+
+pyperclip.copy(results)
